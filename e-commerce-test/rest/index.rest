@@ -1,0 +1,26 @@
+POST http://localhost:9000/admin/auth/token
+Content-Type: application/json
+
+{
+  "email": "admin@test.com",
+  "password": "admin"
+}
+
+
+###
+
+GET http://localhost:9000/store/product-categories
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidXNyXzAxSFRRU1hFMU5YUlk1M1pTU1RNSjZUUlo4IiwiZG9tYWluIjoiYWRtaW4iLCJpYXQiOjE3MTIzODMyMzgsImV4cCI6MTcxMjQ2OTYzOH0.AlM3Bhmz_K-cRgn28FpAWIdaBX53d_MpvuwV8HLWXxg
+
+
+###
+
+POST http://localhost:9000/admin/product-categories
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidXNyXzAxSFRRU1hFMU5YUlk1M1pTU1RNSjZUUlo4IiwiZG9tYWluIjoiYWRtaW4iLCJpYXQiOjE3MTIzODMyMzgsImV4cCI6MTcxMjQ2OTYzOH0.AlM3Bhmz_K-cRgn28FpAWIdaBX53d_MpvuwV8HLWXxg
+
+
+{
+  "name": "Hot sales"
+}
